@@ -7,7 +7,7 @@ app.whenReady().then(()=>{
         width:500,
         height:500,
         resizable: false,
-        icon: path.join(__dirname,'..','assets','images','logo.png')
+        icon: path.join(__dirname,'..','assets','icons','icon.ico')
         
     });
     mainWindow.removeMenu()
