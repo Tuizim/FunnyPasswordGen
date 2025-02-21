@@ -4,10 +4,10 @@ let mainWindow;
 
 app.whenReady().then(()=>{
     mainWindow = new BrowserWindow({
-        width:700,
+        width:500,
         height:500,
         resizable: false,
-        icon: path.join(__dirname,'assets','ico.png')
+        icon: path.join(__dirname,'..','assets','images','logo.png')
         
     });
     mainWindow.removeMenu()

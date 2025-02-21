@@ -1,11 +1,50 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Teste</title>
-        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <title>KeyGo</title>
+        <link rel="stylesheet" href="scss/index.css">
     </head>
-    <body>
-        <h1>Hello World</h1>
-        <button type="button" class="btn btn-primary">Primary</button>
+    <style>
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            5%,95% {
+                opacity: 1;
+            }
+        }
+
+        .fade-animation {
+            animation: fadeInOut 4s ease-in-out;
+        }
+        body {
+          background-image: url(../assets/images/background.jpg);
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          margin: 0;
+        }
+    </style>
+    <body class="text-center align-content-center bg-dark">
+        <img src="../assets/images/logo.png" alt="logo" class="img-fluid w-25">
+        <div class="container w-75">
+            <div class="input-group mb-3 input-group-lg">
+                <span class="input-group-text" id="password">
+                    <i class="bi-key-fill"></i>
+                </span>
+                <input type="text" class="form-control text-center" id="passwordInput"placeholder="password" aria-label="Password" aria-describedby="Password" disabled="True">
+                <button class="btn btn-light btn-lg" id="copy" disabled="true">
+                    <i class="bi-copy"></i>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn btn-secondary btn-lg" id="generate">
+                Generate
+                <i class="bi-arrow-repeat"></i>
+            </button>
+        </div>
+    <script src="../assets/global/global.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>

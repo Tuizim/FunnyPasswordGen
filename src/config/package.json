@@ -1,7 +1,7 @@
 {
   "name": "electron",
   "version": "1.0.0",
-  "main": "src/main/index.js",
+  "main": "../main/index.js",
   "scripts": {
     "dev": "electron ."
   },
@@ -10,5 +10,9 @@
   "description": "",
   "devDependencies": {
     "electron": "^34.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
   }
 }
